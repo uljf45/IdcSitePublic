@@ -18,7 +18,7 @@ export default {
             type: Object,
             default() {
                 return {
-                    icon: './icons/zhupiaopiao.png',
+                    icon: './icons/sever_icon_1.png',
                     title: '',
                     content: '',
                 }
@@ -38,6 +38,7 @@ export default {
             display: flex;
             flex-direction: column;
             flex-basis: 50%;
+            padding-bottom: 100px;
             color: #fff;
         .icon {
             flex-basis: 140px;
@@ -49,13 +50,13 @@ export default {
             text-align: left;
         }
         .icon-title {
-            margin-top: 4px;
+            margin-top: 48px;
             font-size: 30px;
         }
         .icon-content {
             line-height: 48px;
             margin-top: 12px;
-            padding: 0 30px;
+            padding: 0 40px;
             font-size: 20px;
         }
     }

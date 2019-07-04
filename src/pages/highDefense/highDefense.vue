@@ -10,11 +10,8 @@
         <a class="more" href="javascript:void(0)">点击查看更多</a>
       </div>
     </idc-block>
-    <idc-block :title="'产品优势'" :bgColor="'dark'">
+    <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px'}">
       <idc-block-item2 v-for="(item, index) in items2" :key="index" :item="item"></idc-block-item2>
-    </idc-block>
-    <idc-block>
-      <idc-block-item v-for="(item, index) in items3" :key="index" :item="item" :fontColor="'dark'"></idc-block-item>
     </idc-block>
     <idc-footer></idc-footer>
   </div>
@@ -62,49 +59,26 @@ export default {
       ],
       items2: [
         {
-          icon: './icons/siyouyun.png',
-          title: '私有云',
-          content: '专属于你的云；10多年云技术团队全心打造，具有多地高速通道联通，99.999%的网络可用性+100%的基础架构可用性，让你的核心组件永不停步！'
+          icon: './icons/sever_icon_1.png',
+          title: '超强防御能力',
+          content: '机房防护能力超过1T，同时配备自主研发的T级超强硬件清洗平台，从容应对超大流量攻击，确保每一台服务器安全运行。'
         },
         {
-          icon: './icons/fuwuqi.png',
-          title: '高防服务器',
-          content: '针对IDC机房内的互联网客户，提供全栈DDoS攻击防护服务，该服务具有网络路径最优、秒级切入切出、高达1T防护带宽和多种线路选择等优势，客户零操作即可接入服务。同时还提供定制化服务，以满足客户不同场景的业务需求。'
+          icon: './icons/sever_icon_2.png',
+          title: '自建星级机房',
+          content: 'ISO标准T3+评定的超T级机房，机房带宽储备充足，可提供G口带宽、万兆带宽资源接入，有效满足不同客户的带宽需求。'
         },
         {
-          icon: './icons/fuwuqi.png',
-          title: 'CDN高防',
-          content: '近年来，我国的CDN行业一直处于迅猛的发展态势，无论是企业、政府及媒体，在部署互联网业务的同时，都会用到CDN服务。南方联合在解决方案方面部署得非常完善，全方面、多层次地考虑到了各领域客户对CDN的需求。'
+          icon: './icons/sever_icon_3.png',
+          title: '自研防火墙集群',
+          content: '所有机房均是采用基于通用X86平台实现，配合DPDK数据平面开发套件自主研发先进的流量清洗系统，轻松应对来自不同方向的、最大T级攻击流量，将攻击流量清洗后，正常的业务访问流量送达客户网络。下一代防火墙，从底层至页面开发都是网堤团队独立研发，可全方位按客户业务实际情况量身定制安全策略'
         },
         {
-          icon: './icons/yunwei.png',
-          title: '运维服务',
-          content: '我们的支持与服务可根据你当前或计划的使用案例，为您提供一套独特的工具和专业知识，一帮助你创造奇迹'
+          icon: './icons/sever_icon_4.png',
+          title: '数据安全性高',
+          content: '提供全面的DDoS攻击防护，包括TCP Flood, UDP Flood, CC攻击等，还提供黑白名单、CC防护等策略，并可根据业务灵活定义流量报警和清洗的阈值；由机房直接接入，无需经第三方节点/软件进行异地转发，确保数据安全性、保密性。'
         },
       ],
-      items3: [
-        {
-          icon: './icons/youxi.png',
-          title: '游戏解决方案',
-          content: '集游戏部署、游戏运营以及游戏安全三大要素，游戏行业服务器部署方案全面解决多玩家在线，充值账户安全以及推广运营等问题，帮助游戏企业快速部署，打造安全可靠的解决方案，更好应对游戏行业的发展需求。'
-        },
-        {
-          icon: './icons/zhibo.png',
-          title: '直播解决方案',
-          content: '在线视频直播是目前互联网较为常见的网络应用，包括在线娱乐平台、在线电子竞技直播、在线直播课堂、视频会议、在线电视直播、体育赛事直播等应用。而如今，随着游戏行业的火爆，电子竞技直播业务需求随之而来，特别是海外直播用户群体庞大，这就要求了设备在计算能力，网络方面必须具备一些特殊的要求。'
-        },
-        {
-          icon: './icons/ddos.png',
-          title: 'DDOS解决方案',
-          content: 'DDOS高防解决方案针对DDOS攻击,香港BIGNET提供香港高防服务器租用。客户可以把网站域名解析到服务高防IP，有攻击时，高防线路会对攻击的流量进行清洗过滤，把真正的有效流量导到服务器。让攻击不影响服务器正常使用。'
-        },
-        {
-          icon: './icons/jiankong.png',
-          title: '监控解决方案',
-          content: '结合BIGNET网络运维多年企业安全实战经验，深度分析游戏行业典型安全问题，为游戏行业客户打造专业，可靠的游戏安全解决方案。'
-        },
-      ],
-      
     }
   }
 }
