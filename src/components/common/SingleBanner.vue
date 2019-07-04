@@ -4,7 +4,7 @@
             <section class="txt">
                 <h1 v-text="title"></h1>
                 <p v-text="content"></p>
-                <div class="ask">立即咨询</div>
+                <idc-button :text="'立即咨询'"></idc-button>
             </section>
             <section class="pic">
                 <img src="../../../public/imgs/fangyu-large.png" alt="">
@@ -13,6 +13,8 @@
     </div>
 </template>
 <script>
+import IdcButton from '@/components/common/IdcButton.vue'
+
 export default {
     name: 'SingleBanner',
     props: {
@@ -24,6 +26,9 @@ export default {
             type: String,
             default: ''
         }
+    },
+    components: {
+        IdcButton
     }
 }
 </script>
@@ -51,6 +56,7 @@ export default {
         }
         h1 {
             text-align: left;
+            font-weight: normal;
             font-size: 76px;
         }
         p {
@@ -59,17 +65,6 @@ export default {
             text-align: left;
             font-size: 22px;
         }
-        .ask {
-            width: 160px;
-            height: 48px;
-            line-height: 48px;
-            margin-top: 68px;
-            background: #008aff;
-            border-radius: 4px;
-            text-align: center;
-            font-size: 24px;
-        }
-
     }
 
 </style>

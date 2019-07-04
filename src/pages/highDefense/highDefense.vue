@@ -2,11 +2,16 @@
   <div id="index">
     <idc-header></idc-header>
     <single-banner :title="'高防服务器'" :content="'针对IDC机房内的互联网客户，提供全栈DDoS攻击防护服务，该服务具有网络路径最优、秒级切入切出、高达1T防护带宽和多种线路选择等优势，客户零操作即可接入服务。同时还 提供定制化服务，以满足客户不同场景的业务需求。'"></single-banner>
-    <idc-block>
-      <idc-block-item v-for="(item, index) in items1" :key="index" :item="item" :fontColor="'dark'"></idc-block-item>
+    <idc-block :title="'推荐防护配置'" :innerStyle="{paddingBottom: '28px'}">
+      <div class="memos">
+        <idc-memo style="width: 23%;" v-for="(item, index) in items1" :key="index" :item="item" :showButton="true"></idc-memo>
+      </div>
+      <div class="more-wrap">
+        <a class="more" href="javascript:void(0)">点击查看更多</a>
+      </div>
     </idc-block>
-    <idc-block :bgColor="'dark'">
-      <idc-block-item v-for="(item, index) in items2" :key="index" :item="item"></idc-block-item>
+    <idc-block :title="'产品优势'" :bgColor="'dark'">
+      <idc-block-item2 v-for="(item, index) in items2" :key="index" :item="item"></idc-block-item2>
     </idc-block>
     <idc-block>
       <idc-block-item v-for="(item, index) in items3" :key="index" :item="item" :fontColor="'dark'"></idc-block-item>
@@ -20,7 +25,9 @@ import IdcHeader from '@/components/common/IdcHeader.vue'
 import SingleBanner from '@/components/common/SingleBanner.vue'
 import IdcBlock from '@/components/common/IdcBlock.vue'
 import IdcBlockItem from '@/components/common/IdcBlockItem.vue'
+import IdcBlockItem2 from '@/components/common/IdcBlockItem2.vue'
 import IdcFooter from '@/components/common/IdcFooter.vue' 
+import IdcMemo from '@/components/common/IdcMemo.vue' 
 
 export default {
   name: 'index',
@@ -29,30 +36,28 @@ export default {
     SingleBanner,
     IdcBlock,
     IdcBlockItem,
-    IdcFooter
+    IdcBlockItem2,
+    IdcFooter,
+    IdcMemo
   },
   data () {
     return {
       items1: [
         {
-          icon: './icons/zhupiaopiao.png',
-          title: '高效',
-          content: '可通过2000+节点，助你到达成功的彼岸',
+          title: '10G防御',
+          content: 'DDoS防护峰值：10Gbps <br> 线路资源：电信、联通、移动、BGP',
         },
         {
-          icon: './icons/fangyu.png',
-          title: '安全',
-          content: '多年专注行业安全问题，为你的业务保驾护航'
+          title: '20G防御',
+          content: 'DDoS防护峰值：20Gbps <br> 线路资源：电信、联通、移动、BGP'
         },
         {
-          icon: './icons/sudu.png',
-          title: '速度',
-          content: '良好的国内及国外运营商关系，让你一路向前'
+          title: '50G防御',
+          content: 'DDoS防护峰值：50Gbps <br> 线路资源：电信、联通、移动、BGP'
         },
         {
-          icon: './icons/zhidexinlai.png',
-          title: '可信赖',
-          content: '强大的技术团队，7X24X365不间断待命，让你安枕无忧'
+          title: '100G防御',
+          content: 'DDoS防护峰值：100Gbps <br> 线路资源：电信、联通、移动、BGP'
         },
       ],
       items2: [
@@ -105,7 +110,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
 #index {
   min-width: 1024px;
   text-align: center;
@@ -113,6 +118,21 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  .memos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .more-wrap {
+    width: 100%;
+    margin-top: 94px;
+    text-align: center;
+  }
+  .more {
+    font-size: 26px;
+    color: #4FABFC;
+  }
 }
 .owl-carousel {
   min-width: 1024px;
