@@ -42,6 +42,7 @@ export default {
             color: #fff;
         .icon {
             flex-basis: 140px;
+            height: 139px;
             flex-shrink: 0;
             flex-grow: 0;
         }

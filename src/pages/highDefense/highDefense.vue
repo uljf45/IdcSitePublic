@@ -1,7 +1,7 @@
 <template>
   <div id="index">
     <idc-header></idc-header>
-    <single-banner :title="'高防服务器'" :content="'针对IDC机房内的互联网客户，提供全栈DDoS攻击防护服务，该服务具有网络路径最优、秒级切入切出、高达1T防护带宽和多种线路选择等优势，客户零操作即可接入服务。同时还 提供定制化服务，以满足客户不同场景的业务需求。'"></single-banner>
+    <single-banner :title="'高防服务器'" :content="'针对IDC机房内的互联网客户，提供全栈DDoS攻击防护服务，该服务具有网络路径最优、秒级切入切出、高达1T防护带宽和多种线路选择等优势，客户零操作即可接入服务。同时还提供定制化服务，以满足客户不同场景的业务需求。'"></single-banner>
     <idc-block :title="'推荐防护配置'" :innerStyle="{paddingBottom: '28px'}">
       <div class="memos">
         <idc-memo style="width: 23%;" v-for="(item, index) in items1" :key="index" :item="item" :showButton="true"></idc-memo>
@@ -21,7 +21,6 @@
 import IdcHeader from '@/components/common/IdcHeader.vue'
 import SingleBanner from '@/components/common/SingleBanner.vue'
 import IdcBlock from '@/components/common/IdcBlock.vue'
-import IdcBlockItem from '@/components/common/IdcBlockItem.vue'
 import IdcBlockItem2 from '@/components/common/IdcBlockItem2.vue'
 import IdcFooter from '@/components/common/IdcFooter.vue' 
 import IdcMemo from '@/components/common/IdcMemo.vue' 
@@ -32,7 +31,6 @@ export default {
     IdcHeader,
     SingleBanner,
     IdcBlock,
-    IdcBlockItem,
     IdcBlockItem2,
     IdcFooter,
     IdcMemo

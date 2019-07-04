@@ -20,7 +20,7 @@
                         <ul class="subnav">
                             <li><a href="./index.html">私有云</a><a href="./index.html">云主机租用</a></li>
                             <li><a href="./highDefense.html">高防服务器</a><a href="./index.html">跨境专线</a></li>
-                            <li><a href="./index.html">高防IP</a><a href="./index.html">SSL证书</a></li>
+                            <li><a href="./highDefenseIP.html">高防IP</a><a href="./index.html">SSL证书</a></li>
                             <li><a href="./index.html">CDN高防</a><a href="./index.html">运维服务</a></li>
                         </ul>
                     </div>
