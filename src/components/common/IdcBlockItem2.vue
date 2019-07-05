@@ -30,7 +30,9 @@ export default {
         },
         contentStyle: {
             type: Object,
-            default: {}
+            default () {
+                return {}
+            }
         }
         
     }

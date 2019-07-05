@@ -5,7 +5,7 @@
         </div>
         <div class="icon-right">
             <p class="icon-title" :style="{color: fontColor === 'light' ? '#E1E5E8' : '#23395E'}" v-text="item.title"></p>
-            <p class="icon-content" :style="{color: fontColor === 'light' ? '#E1E1E2' : '#23395E'}" v-text="item.content"></p>
+            <p class="icon-content" :style="{color: fontColor === 'light' ? '#E1E1E2' : '#23395E'}" v-html="item.content"></p>
         </div>
     </div>
 </template> 
