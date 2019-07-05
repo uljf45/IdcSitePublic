@@ -50,7 +50,7 @@ export default {
             border-radius: 10px 10px 0 0;
         }
         .content {
-            line-height: 48px;
+            line-height: 38px;
             padding: 38px;
             text-align: left;
         }
