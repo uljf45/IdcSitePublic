@@ -75,7 +75,7 @@ export default {
         background: #e1e5e8;
     }
     .block-dark {
-        background: #233953;
+        background: #23395e;
     }
 </style>
 

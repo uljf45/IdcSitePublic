@@ -18,7 +18,7 @@
                         <li><a href="./highDefenseIP.html">高防IP</a></li>
                         <li><a href="./index.html">CDN高防</a></li>
                         <li><a href="./cloud.html">云主机租用</a></li>
-                        <li><a href="./index.html">跨境专线</a></li>
+                        <li><a href="./specialLine.html">跨境专线</a></li>
                         <li><a href="./index.html">SSL证书</a></li>
                         <li><a href="./index.html">运维服务</a></li>
                     </ul>

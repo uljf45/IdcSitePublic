@@ -5,7 +5,7 @@
                 <img :src="item.icon" alt="">
             </div>
             <p class="icon-title" :style="{color: fontColor === 'light' ? '#fff' : '#23395E'}" v-text="item.title"></p>
-            <p class="icon-content" :style="{color: fontColor === 'light' ? '#fff' : '#23395E'}" v-text="item.content"></p>
+            <p class="icon-content" :style="[{color: fontColor === 'light' ? '#fff' : '#23395E'}, contentStyle]" v-text="item.content"></p>
         </div>
     </div>
 </template> 
@@ -27,6 +27,10 @@ export default {
         fontColor: {
             type: String,
             default: 'light'
+        },
+        contentStyle: {
+            type: Object,
+            default: {}
         }
         
     }

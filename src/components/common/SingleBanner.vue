@@ -3,7 +3,7 @@
         <div class="single-banner-inner">
             <section class="txt">
                 <h1 v-text="title"></h1>
-                <p v-text="content"></p>
+                <p v-html="content"></p>
                 <idc-button :text="'立即咨询'"></idc-button>
             </section>
             <section class="pic">
