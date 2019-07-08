@@ -181,11 +181,12 @@ export default {
         border-bottom: 1px solid #707070;
         span {
             display: block;
-            width: 160px;
+            width: 114px;
             line-height: 34px;
             font-size: 18px;
         }
         ul {
+            flex: 1;
         }
         li {
             line-height: 34px;
