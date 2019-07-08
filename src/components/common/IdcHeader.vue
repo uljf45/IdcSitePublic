@@ -117,7 +117,6 @@ export default {
             align-items: center;
             flex-basis: 18%;
             height: 100px;
-            background: #23395e;
             span {
                 display: flex;
                 justify-content: center;
@@ -126,6 +125,9 @@ export default {
                 height: 100%;
                 font-size: 22px;
                 color: #e4e4e4;
+            }
+            &:hover {
+                background: #23395e;
             }
             &:hover .subnav {
                 display: block;
