@@ -4,7 +4,9 @@
     <single-banner :title="'SSL证书'" :content="'SSL证书提供了一种在互联网上身份验证的方式，是用来标识和证明双方身份的数字信息文件。使用SSL证书的网站，可以保证用户和服务器间信息交换的保密性具有不可窃听、不可更改、不可否认、不可冒充的功能。并对云上证书进行统一生命周期管理，简化证书部署，一键分发到云上产品。'"></single-banner>
     <idc-block :title="'证书品牌'" :innerStyle="{width: '92%', padding: '30px 0', justifyContent: 'space-around' }">
       <div v-for="(item, index) in items3" :key="index" class="certificate-item">
-        <div class="certificate-item-pic"></div>
+        <div class="certificate-item-pic">
+          <img :src="item.icon" alt="">
+        </div>
         <p class="certificate-item-content" v-text="item.content"></p>
       </div>
     </idc-block>
@@ -14,7 +16,7 @@
     <idc-block :title="'推荐套餐'">
       <div class="memos">
         <ssl-memo style="width: 23%;" v-for="(item, index) in items4" :key="index" :item="item" :showButton="true"></ssl-memo>
-      </div>
+      </div> 
     </idc-block>
     <idc-block :title="'证书类型'" :bgColor="'dark'" >
       <ssl-table></ssl-table>
@@ -96,16 +98,20 @@ export default {
       ],
       items3: [
         {
+          icon: './icons/brand_01_hover.png',
           content: 'Symantec是全球最大的数字证书认证机构，为网站、电子商务及通讯提供安全保护。Symantec通过强大的加密功能和严格的身份认证，保护着全世界超过50万台服务器的安全。'
         },
         {
-          content: 'Symantec是全球最大的数字证书认证机构，为网站、电子商务及通讯提供安全保护。Symantec通过强大的加密功能和严格的身份认证，保护着全世界超过50万台服务器的安全。'
+          icon: './icons/brand_02_hover.png',
+          content: 'GeoTrust是全球第二大数字证书颁发机构，也是身份认证和信任认证领域的领导者，该公司各种先进的技术使得任何大小的机构和公司都能安全、低成本地部署SSL数字证书和实现各种身份认证。'
         },
         {
-          content: 'Symantec是全球最大的数字证书认证机构，为网站、电子商务及通讯提供安全保护。Symantec通过强大的加密功能和严格的身份认证，保护着全世界超过50万台服务器的安全。'
+          icon: './icons/brand_03_hover.png',
+          content: 'Thawte是第一个在美国以外的SSL证书颁发机构，目前全球SSL市场中占有40%的份额。迄今为止，Thawte证书发行量超过94.5万，服务于全球240多个国家。'
         },
         {
-          content: 'Symantec是全球最大的数字证书认证机构，为网站、电子商务及通讯提供安全保护。Symantec通过强大的加密功能和严格的身份认证，保护着全世界超过50万台服务器的安全。'
+          icon: './icons/brand_04_hover.png',
+          content: 'RapidSSL是GeoTrust公司的一个向提供简易版SSL证书的品牌，保护网站信息不会被非法窃取和非法篡改，为不涉及到银行卡信息的网站提供一个更低价格的服务器SSL数字证书。'
         },
       ],
       items4: [
@@ -187,7 +193,14 @@ export default {
   }
 
   .certificate-item-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 260px;
+    img {
+      width: 60%;
+    }
   }
   .certificate-item-content {
     line-height: 26px;

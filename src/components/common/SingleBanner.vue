@@ -1,5 +1,5 @@
 <template>
-    <div class="single-banner" :class="[{'single-banner--bg2': bgImgType == 2}]">
+    <div class="single-banner" :class="{'single-banner--bg2': bgImgType == 2}">
         <div class="single-banner-inner" >
             <section class="txt">`
                 <h1 v-text="title"></h1>

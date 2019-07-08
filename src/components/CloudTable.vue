@@ -1,41 +1,19 @@
 <template>
     <div class="cloud-table">
         <div class="tabs">
-            <div class="tab">入门型</div>
-            <div class="tab">进阶型</div>
-            <div class="tab">专业型</div>
-            <div class="tab active">理想型</div>
+            <div v-for="(item, index) in items" :key="index" class="tab" :class="{active: tabIndex === index}" v-text="item.name" @mouseover="tabIndex = index"></div>
         </div>
-        <div class="content">
-            <p class="p1">适用对象：社区SNS/论坛/ERP/OACRM、网络游戏等其他高端服务</p>
-            <p class="p2">
-                适合对计算性能要求较高的应用场景，如企业运营活动、批量处理、分布式分析、游戏app等。<br>
-                网络游戏在近年来发展迅速，除了传统网络终端之外，网页游戏、手机游戏等发展迅速，也让整个游戏市场愈发壮大。<br>
-                按需付费的方式节省了大量现金流和运营费用。
+        <div v-for="(item, index) in items" :key="index" v-show="tabIndex === index" class="content">
+            <p class="p1" v-text="item.title"></p>
+            <p class="p2" v-html="item.content">
             </p>
             <div class="recommend">
                 <div class="recommend-left">
                     <span class="recommend-title">推荐配置</span>
                     <div class="circles">
-                        <div class="circle">
-                            <p class="circle-p1">16核</p>
-                            <p class="circle-p2">CPU</p>
-                        </div>
-                        <div class="circle">
-                            <p class="circle-p1">16G</p>
-                            <p class="circle-p2">内存</p>
-                        </div>
-                        <div class="circle">
-                            <p class="circle-p1">5M</p>
-                            <p class="circle-p2">宽带</p>
-                        </div>
-                        <div class="circle">
-                            <p class="circle-p1">5/20G</p>
-                            <p class="circle-p2">默认防护</p>
-                        </div>
-                        <div class="circle">
-                            <p class="circle-p1">I/O优化<br>实例</p>
-                            <p class="circle-p2">免费开启</p>
+                        <div v-for="(config, ind) in item.configs" :key="ind" class="circle">
+                            <p class="circle-p1" v-html="config.txt1">16核</p>
+                            <p class="circle-p2" v-text="config.txt2">CPU</p>
                         </div>
                     </div>
                 </div>
@@ -48,6 +26,61 @@
 <script>
 export default {
     name: 'CloudTable',
+    data () {
+        return {
+            tabIndex: 0,
+            items: [
+                {
+                    name: '入门型',
+                    title: '适用对象：小型企业官网或者个人站长',
+                    content: '网站初始阶段并发访问量小，只需要一台低配置的服务器即可，应用程序，数据库，文件等所有资源均在一台服务器上，后期可以基于云计算弹性特征随时调整资源配置，无需担心低配服务器在业务突增时带来的资源不足问题。<br>适用于个人网站初始阶段并发访问量小，经济配置省钱适用。',
+                    configs: [
+                        {txt1: '2核', txt2: 'CPU'},
+                        {txt1: '2G', txt2: '内存'},
+                        {txt1: '5M', txt2: '带宽'},
+                        {txt1: '5/20G', txt2: '默认防护'},
+                        {txt1: 'I/O优化<br>实例', txt2: '免费开启'},
+                    ]
+                },
+                {
+                    name: '进阶型',
+                    title: '适用对象：地方与行业门户网站',
+                    content: '社区网站业务相对个人网站，有更多的用户访问，为保证性能，此时就需要对带宽、内存、CPU进行优化，以便提供更大的空间，提升访问速度。<br>适合流量适中的网站应用，或简单开发环境、代码存储库等。',
+                    configs: [
+                        {txt1: '4核', txt2: 'CPU'},
+                        {txt1: '4G', txt2: '内存'},
+                        {txt1: '5M', txt2: '带宽'},
+                        {txt1: '5/20G', txt2: '默认防护'},
+                        {txt1: 'I/O优化<br>实例', txt2: '免费开启'},
+                    ]
+                },
+                {
+                    name: '专业型',
+                    title: '适用对象：网上商城、团购网',
+                    content: '随着电子商务的不断发展，众多企业逐渐意识到电子商务的重要性。该配置适用于开发、测试、上线初期，后期可根据您的业务的实际增长进行增减，可灵活控制。<br>计算能力满足90%云计算使用者需求，适合企业运营活动、并行计算应用、普通数据处理服务等。',
+                    configs: [
+                        {txt1: '8核', txt2: 'CPU'},
+                        {txt1: '8G', txt2: '内存'},
+                        {txt1: '5M', txt2: '带宽'},
+                        {txt1: '5/20G', txt2: '默认防护'},
+                        {txt1: 'I/O优化<br>实例', txt2: '免费开启'},
+                    ]
+                },
+                {
+                    name: '理想型',
+                    title: '适用对象：社区SNS/论坛/ERP/OACRM、网络游戏等其他高端服务',
+                    content: '适合对计算性能要求较高的应用场景，如企业运营活动、批量处理、分布式分析、游戏app等。<br>网络游戏在近年来发展迅速，除了传统网络终端之外，网页游戏、手机游戏等发展迅速，也让整个游戏市场愈发壮大。<br>按需付费的方式节省了大量现金流和运营费用。',
+                    configs: [
+                        {txt1: '16核', txt2: 'CPU'},
+                        {txt1: '16G', txt2: '内存'},
+                        {txt1: '5M', txt2: '带宽'},
+                        {txt1: '5/20G', txt2: '默认防护'},
+                        {txt1: 'I/O优化<br>实例', txt2: '免费开启'},
+                    ]
+                },
+            ]
+        }
+    }
 }
 </script>
 
