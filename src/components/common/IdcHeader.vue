@@ -27,11 +27,11 @@
                     <span>解决方案</span>
                     <ul class="subnav">
                         <li class="subnav-border"></li>
-                        <li><a href="./index.html">游戏解决方案</a></li>
-                        <li><a href="./index.html">直播解决方案</a></li>
-                        <li><a href="./index.html">DDOS解决方案</a></li>
-                        <li><a href="./index.html">监控解决方案</a></li>
-                        <li><a href="./index.html">金融安全解决方案</a></li>
+                        <li><a href="./GameSolution.html">游戏解决方案</a></li>
+                        <li><a href="./LiveBroadcastSolution.html">直播解决方案</a></li>
+                        <li><a href="./DDOSSolution.html">DDOS解决方案</a></li>
+                        <li><a href="./MonitoringSolution.html">监控解决方案</a></li>
+                        <li><a href="./FinancialSolutions.html">金融安全解决方案</a></li>
                     </ul>
                 </div>
                 <div class="nav-item">
@@ -137,6 +137,7 @@ export default {
             left: 0;
             top: 100px;
             width: 100%;
+            padding-bottom: 6px;
             background: #23395e;
             z-index: 999;
             li {

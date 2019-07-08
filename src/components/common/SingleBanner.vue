@@ -1,7 +1,7 @@
 <template>
-    <div class="single-banner">
-        <div class="single-banner-inner">
-            <section class="txt">
+    <div class="single-banner" :class="[{'single-banner--bg2': bgImgType == 2}]">
+        <div class="single-banner-inner" >
+            <section class="txt">`
                 <h1 v-text="title"></h1>
                 <p v-html="content"></p>
                 <idc-button :text="'立即咨询'"></idc-button>
@@ -25,6 +25,10 @@ export default {
         content: {
             type: String,
             default: ''
+        },
+        bgImgType: {
+            type: Number,
+            default: 1, // 1. '../../../public/imgs/single-banner.png'   2. '../../../public/imgs/single-banner2.png'
         }
     },
     components: {
@@ -38,6 +42,10 @@ export default {
         height: 698px;
         background: url('../../../public/imgs/single-banner.png') no-repeat center top;
         color: #e1e1e2;
+    }
+
+    .single-banner--bg2 {
+        background: url('../../../public/imgs/single-banner.png') no-repeat center top;
     }
 
     .single-banner-inner {
