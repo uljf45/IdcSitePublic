@@ -69,6 +69,9 @@ export default {
             border: 1px solid #f1f1f1;
             font-size: 22px;
             color: #424242;
+            &.active {
+                border-left: 2px solid #008AFF;
+            }
         }
         .content {
             position: relative;
