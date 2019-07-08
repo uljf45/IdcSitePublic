@@ -13,7 +13,7 @@
         <idc-block-item5 :item="item" mIconWidth = '30%'></idc-block-item5>        
       </idc-block>
     </template>
-     <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px'}">
+     <idc-block :title="'服务优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px'}">
       <idc-block-item4 v-for="(item, index) in items3" :key="index" :item="item"></idc-block-item4>
     </idc-block>
     <idc-footer></idc-footer>

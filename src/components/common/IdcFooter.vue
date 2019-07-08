@@ -27,11 +27,11 @@
                     <div class="nav-item nav-item--second">
                         <span>解决方案</span>
                         <ul class="subnav">
-                            <li><a href="./index.html">游戏解决方案</a></li>
-                            <li><a href="./index.html">直播解决方案</a></li>
-                            <li><a href="./index.html">DDOS解决方案</a></li>
-                            <li><a href="./index.html">监控解决方案</a></li>
-                            <li><a href="./index.html">金融安全解决方案</a></li>
+                            <li><a href="./GameSolution.html">游戏解决方案</a></li>
+                            <li><a href="./LiveBroadcastSolution.html">直播解决方案</a></li>
+                            <li><a href="./DDOSSolution.html">DDOS解决方案</a></li>
+                            <li><a href="./MonitoringSolution.html">监控解决方案</a></li>
+                            <li><a href="./FinancialSolutions.html">金融安全解决方案</a></li>
                         </ul>
                     </div>
                     <div class="nav-item">
