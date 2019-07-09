@@ -10,7 +10,7 @@
         <p class="certificate-item-content" v-text="item.content"></p>
       </div>
     </idc-block>
-    <idc-block :title="'特点与优势'" :bgColor="'dark'" :innerStyle="{width: '100%', margin: '0', paddingBottom: 0 }">
+    <idc-block :title="'特点与优势'" :bgColor="'dark'" :innerStyle="{ paddingBottom: '10px' }">
       <idc-block-item2 :contentStyle="{padding: '0 20px'}" v-for="(item, index) in items2" :key="index" :item="item"></idc-block-item2>
     </idc-block>
     <idc-block :title="'推荐套餐'">
@@ -119,28 +119,28 @@ export default {
           title: '体验型DV SSL',
           enTitle: 'Symantec Basic DV',
           content: '支持域名数： 单个 <br>支持通配符：否<br> 加密强度：最高支持256位自适应加密<br> 支持苹果ATS：是<br> 包含企业信息：—<br> 绿色地址栏： —',
-          priceMe: '￥49.00元/年',
+          priceMe: '面议',
           priceMarket: '市场价：1000元/年',
         },
         {
           title: '普通型DV SSL',
           enTitle: 'RapidSSL',
           content: '支持域名数： 单个 <br>支持通配符：是<br> 加密强度：最高支持256位自适应加密<br> 支持苹果ATS：是<br> 包含企业信息：—<br> 绿色地址栏： —',
-          priceMe: '￥200.00元/年',
+          priceMe: '面议',
           priceMarket: '市场价：350元/年',
         },
         {
           title: '普通型DV SSL',
           enTitle: 'RapidSSL Wildcard',
           content: '支持域名数： 无限个二级子域名<br> 支持通配符：是<br> 加密强度：最高支持256位自适应加密<br> 支持苹果ATS：是<br> 包含企业信息：—<br> 绿色地址栏： —',
-          priceMe: '￥1200.00元/年',
+          priceMe: '面议',
           priceMarket: '市场价：2000元/年',
         },
         {
           title: '高级版EV SSL',
           enTitle: 'GeoTrust True BusinessID with EV',
           content: '支持域名数： 单个，可选多个<br>支持通配符：否<br>加密强度：最高支持256位自适应加密<br>支持苹果ATS：是<br>包含企业信息：是<br>绿色地址栏： 是',
-          priceMe: '￥3300.00元/年',
+          priceMe: '面议',
           priceMarket: '市场价：4800元/年',
         },
       ]

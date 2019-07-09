@@ -8,7 +8,7 @@
         </div>
         <div class="price-wrap">
             <div class="price-me" v-text="item.priceMe"></div>
-            <div class="price-market" v-text="item.priceMarket"></div>
+            <!-- <div class="price-market" v-text="item.priceMarket"></div> -->
         </div>
 
         <div class="ask">

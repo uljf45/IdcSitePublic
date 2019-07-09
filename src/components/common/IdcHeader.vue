@@ -42,9 +42,9 @@
                         <li><a href="./index.html">7X24小时运维</a></li>
                     </ul>
                 </div>
-                <div class="nav-item">
+                <!-- <div class="nav-item">
                     <span>合作与共赢</span>
-                </div>
+                </div> -->
                 <div class="nav-item">
                     <span>关于我们</span>
                     <ul class="subnav">

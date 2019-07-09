@@ -4,7 +4,7 @@
             <section class="footer-top">
                 <div class="footer-kefu">
                     <p class="footer-kefu-title">客服热线</p>
-                    <p class="footer-kefu-phone">400-008-0908</p>
+                    <p class="footer-kefu-phone">+852 53000356</p>
                     <div class="footer-kefu-type">
                         <div class="footer-yellowbox">企业微信</div>
                         <div class="footer-time">09:00～18:00</div>
@@ -41,9 +41,9 @@
                             <li><a href="./index.html">7X24小时运维</a></li>
                         </ul>
                     </div>
-                    <div class="nav-item">
+                    <!-- <div class="nav-item">
                         <span>合作与共赢</span>
-                    </div>
+                    </div> -->
                     <div class="nav-item">
                         <span>关于我们</span>
                         <ul class="subnav">
