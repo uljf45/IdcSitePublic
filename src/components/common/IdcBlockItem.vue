@@ -38,23 +38,27 @@ export default {
             display: flex;
             flex-direction: row;
             flex-basis: 50%;
-            padding: 36px 0;
+            padding: 20px 0;
         .icon {
-            flex-basis: 140px;
+            flex-basis: 90px;
             flex-shrink: 0;
             flex-grow: 0;
+            img {
+                transform: scale(0.67);
+                transform-origin: center top;
+            }
         }
         .icon-right {
             padding-right: 20px;
             text-align: left;
         }
         .icon-title {
-            margin-top: 4px;
-            font-size: 30px;
+            font-size: 16px;
         }
         .icon-content {
             margin-top: 12px;
-            font-size: 20px;
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 </style>

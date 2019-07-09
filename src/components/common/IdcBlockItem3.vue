@@ -37,11 +37,15 @@ export default {
             display: flex;
             flex-direction: row;
             flex-basis: 100%;
-            padding: 36px 0;
+            padding: 20px 0;
         .icon {
             flex-basis: 140px;
             flex-shrink: 0;
             flex-grow: 0;
+            img {
+                transform: scale(0.7);
+                transform-origin: center top;
+            }
         }
         .icon-right {
             padding-right: 20px;
@@ -50,15 +54,16 @@ export default {
         .icon-title {
             flex: 0 0 80px;
             margin-top: 4px;
-            font-size: 30px;
+            font-size: 20px;
             font-weight: bold;
         }
         .icon-content {
             flex: 1;
-            margin-top: 10px;
+            margin-top: 4px;
             padding: 0 30px;
             text-align: left;
-            font-size: 20px;
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 </style>

@@ -81,33 +81,27 @@ export default {
         color: #7C7C7C;
     }
     .footer-inner {
-        width: 84%;
-        min-width: 1024px;
-        max-width: 1620px;
+        width: 1024px;
         margin: 0 auto;
-        padding-left: 10px;
         background: #000;
     }
     .footer-top {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 62px 0 30px;
+        padding: 50px 0 20px;
     }
     .footer-kefu {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 340px;
-        @media screen and (max-width: 1400px) {
-            width: 260px
-        }
+        width: 260px;
         height: 218px;
         border-right: 1px solid #707070;
     }
     .footer-kefu-title {
         text-align: left;
-        font-size: 30px;
+        font-size: 20px;
         color: #937722;
     }
     .footer-kefu-type {
@@ -119,21 +113,21 @@ export default {
     .footer-kefu-phone {
         line-height: 52px;
         text-align: left;
-        font-size: 38px;
+        font-size: 18px;
         color: #F3D660;
     }
     .footer-yellowbox {
-        width: 128px;
-        height: 32px;
-        line-height: 32px;
+        width: 100px;
+        height: 28px;
+        line-height: 28px;
         margin-right: 14px;
         border-radius: 16px;
-        font-size: 18px;
+        font-size: 14px;
         background: #F3D660;
         color: #000;
     }
     .footer-time {
-        font-size: 18px;
+        font-size: 14px;
 
     }
     .footer-nav {
@@ -141,10 +135,7 @@ export default {
         flex-direction: row;
         flex: 1;
         justify-content: space-around;
-        padding-left: 10px;
-        @media screen and (min-width: 1400px) {
-            padding-left: 60px;
-        }
+        padding-left: 58px;
     }
     .nav-item {
         flex: 1  1  120px;
@@ -156,7 +147,7 @@ export default {
             flex: 1 1 170px;
         }
         span {
-            font-size: 22px;
+            font-size: 16px;
             color: #EAEAEA;
         }
         .subnav {
@@ -164,39 +155,43 @@ export default {
             li {
                 display: flex;
                 justify-content: space-between;
-                height: 44px;
-                line-height: 44px;
+                height: 40px;
+                line-height: 40px;
             }
             a {
                 flex: 1;
-                font-size: 18px;
+                font-size: 14px;
+                &:hover {
+                    color: #d6d6d6;
+                }
             }
         }
     }
     .footer-links {
         display: flex;
         flex-direction: row;
-        padding: 30px 40px;
+        padding: 20px 30px;
         border-top: 1px solid #707070;
         border-bottom: 1px solid #707070;
         span {
             display: block;
             width: 114px;
             line-height: 34px;
-            font-size: 18px;
+            font-size: 14px;
         }
         ul {
             flex: 1;
         }
         li {
-            line-height: 34px;
+            line-height: 22px;
             text-align: left;
-            font-size: 18px;
+            font-size: 14px;
         }
     }
     .footer-copyright {
-        height: 78px;
-        line-height: 78px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
     }
 }
 </style>

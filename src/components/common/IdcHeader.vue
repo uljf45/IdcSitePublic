@@ -74,10 +74,10 @@ export default {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            width: 84%;
-            height: 100px;
-            min-width: 1024px;
-            max-width: 1600px;
+            width: 1024px;
+            height: 68px;
+            // min-width: 1024px;
+            // max-width: 1600px;
             margin: 0 auto;
             padding: 0 10px;
             background: #000;
@@ -89,7 +89,7 @@ export default {
             align-items: center;
             width: 180px;
             height: 56px;
-            margin-right: 80px;
+            margin-right: 54px;
             color: #e4e4e4;
             img {
                 width: 50px;
@@ -116,18 +116,19 @@ export default {
             justify-content: center;
             align-items: center;
             flex-basis: 18%;
-            height: 100px;
+            height: 68px;
             span {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
                 height: 100%;
-                font-size: 22px;
+                font-size: 18px;
                 color: #e4e4e4;
             }
             &:hover {
                 background: #23395e;
+                cursor: pointer;
             }
             &:hover .subnav {
                 display: block;
@@ -137,24 +138,24 @@ export default {
             position: absolute;
             display: none;
             left: 0;
-            top: 100px;
+            top: 68px;
             width: 100%;
             padding-bottom: 6px;
             background: #23395e;
             z-index: 999;
             li {
-                height: 42px;
-                line-height: 42px;
+                height: 34px;
+                line-height: 34px;
                 &.subnav-border {
                     width: 80%;
                     height: 1px;
-                    margin: 0 auto 10px;
+                    margin: 0 auto 6px;
                     background: #e4e4e4;
                 }
             }
             a {
                 display: block;
-                font-size: 18px;
+                font-size: 16px;
                 color: #e4e4e4;
                 &:hover {
                     color: #fff;

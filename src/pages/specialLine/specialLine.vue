@@ -2,13 +2,13 @@
   <div id="index">
     <idc-header></idc-header>
     <single-banner :title="'跨境专线'" :content="'连接多个国家地区，<br>专线直通网络，延迟低，安全可靠。'"></single-banner>
-    <idc-block :title="'网络常见问题'" :innerStyle="{width: '92%', padding: '68px'}">
-      <div class="question-item" v-for="(item, index) in items1" :class="{mt70: index > 3}" :key="index">
-        <img src="../../../public/icons/zhupiaopiao.png" alt="">
+    <idc-block :title="'网络常见问题'" :innerStyle="{ padding: '48px 0'}">
+      <div class="question-item" v-for="(item, index) in items1" :class="{mt50: index > 3}" :key="index">
+        <img src="../../../public/icons/zhupiaopiao.png" al5="">
         <p class="" v-text="item.title"></p>
       </div>
     </idc-block>
-    <idc-block :title="'为什么选择我们'" :bgColor="'dark'" :innerStyle="{width: '100%', margin: '0', padding: '0'}">
+    <idc-block :title="'为什么选择我们'" :bgColor="'dark'" :innerStyle="{ margin: '0 auto', padding: '0'}">
       <div class="why-blocks">
         <div class="why-block why-block--large justify-end">
           <div class="why-block-inner">
@@ -135,26 +135,21 @@ export default {
 #index {
   min-width: 1024px;
   text-align: center;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   .question-item {
-    &.mt70 {
-      margin-top: 70px;
+    &.mt50 {
+      margin-top: 50px;
     }
     flex-basis: 25%;
     p {
-      margin-top: 30px;
-      font-size: 28px;
+      margin-top: 20px;
+      font-size: 18px;
       font-weight: bold;
-      @media screen and (max-width: 1400px) {
-        font-size: 26px;
-      }
-
-      @media screen and (max-width: 1260px) {
-        font-size: 22px;
-      }
+    }
+    img {
+      transform: scale(0.7);
     }
   }
   .more-wrap {
@@ -181,7 +176,7 @@ export default {
     background: #1d487b;
   }
   .why-block-inner {
-    flex: 0 0 87%;
+    flex: 0 0 99%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,33 +186,35 @@ export default {
     background: #23395e;
   }
   .why-number {
-    font-size: 200px;
+    font-size: 136px;
     font-weight: bold;
     font-family: initial;
     color: #008AFF;
   }
   .why-number-mr {
-    margin-right: 9%;
+    margin-right: 3%;
   }
   .why-content {
     line-height: 34px;
     padding: 0 30px;
     text-align: left;
-    font-size: 24px;
+    font-size: 16px;
     color: #fff;
   }
   .bg-light {
     background: #1d487b;
+    flex: 0 0 86%;
   }
   .bg-dark {
     background: #23395e;
+    flex: 0 0 10%;
   }
   .why-content--pl {
     padding-left: 60px;
   }
   .why-content-pr {
-    padding-left: 9%;
-    padding-right: 20px;
+    padding-left: 4%;
+    padding-right: 30px;
   }
   .justify-end {
     justify-content: flex-end;

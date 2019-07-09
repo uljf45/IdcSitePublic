@@ -1,5 +1,5 @@
 <template>
-    <div class="idc-memo">
+    <div class="ssl-memo">
         <div class="header" >
             <p class="header-title" v-text="item.title"></p>
             <p class="header-entitle" v-text="item.enTitle"></p>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .idc-memo {
+    .ssl-memo {
         position: relative;
         background: #fff;
         border-radius: 10px;
@@ -53,50 +53,46 @@ export default {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 96px;
+            height: 62px;
             background: #4FABFC;
             color: #fff;
-            font-size: 38px;
             border-radius: 10px 10px 0 0;
         }
         .header-title {
-            font-size: 30px;
-            line-height: 34px;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: bold;
         }
         .header-entitle {
-            font-size: 20px;
+            font-size: 14px;
             line-height: 20px;
         }
         .content {
-            line-height: 38px;
-            padding: 18px 26px 34px;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 18px 26px 28px;
             text-align: left;
-            @media screen and (max-width: 1400px) {
-                height: 318px;
-            }
+            height: 220px;
         }
         .price-wrap {
             margin: 0 28px;
-            padding: 28px 0 96px;
+            padding: 16px 0 62px;
             border-top: 1px solid #707070;
-            @media screen and (max-width: 1400px) {
-                margin: 0 10px;
-            }
         }
         .price-me {
-            line-height: 44px;
-            font-size: 32px;
+            line-height: 30px;
+            font-size: 20px;
             color: #FA6000;
             white-space: nowrap
         }
         .price-market {
-            font-size: 18px;
+            font-size: 12px;
             line-height: 24px;
             color: #a8a8a8;
         }
         .ask {
             position: absolute;
-            bottom: 28px;
+            bottom: 12px;
             left: 0;
             right: 0;
             margin: 0 auto;

@@ -16,14 +16,14 @@ export default {
 
 <style lang="scss">
     .idc-button {
-        width: 160px;
-        height: 48px;
-        line-height: 48px;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
         margin-top: 68px;
         background: #008aff;
         border-radius: 4px;
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
         color: #e1e1e2;
     }
 </style>

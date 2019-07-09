@@ -58,13 +58,13 @@ export default {
     data() {
         return {
             btnStyle: {
-                // width: '112px',
-                // height: '32px',
-                // lineHeight: '32px',
+                 width: '100px',
+                height: '30px',
+                lineHeight: '30px',
                 backgroundColor: '#4FABFC',
                 color: '#fff',
                 margin: '0 auto',
-                // fontSize: '18px',
+                fontSize: '14px',
             }
         }
     }
@@ -85,9 +85,9 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 68px;
+            height: 60px;
             background: #F4F4F4;
-            font-size: 22px;
+            font-size: 18px;
             cursor: pointer;
             &.active {
                 border-top: 2px solid #008AFF;
@@ -95,7 +95,7 @@ export default {
             }
         }
         .content {
-            padding: 64px 28px 0;
+            padding: 50px 22px 0;
         }
         table {
             width: 100%;
@@ -106,18 +106,18 @@ export default {
         }
         th {
             padding: 12px 0;
-            font-size: 22px;
+            font-size: 16px;
         }
         td {
-            line-height: 38px;
+            line-height: 24px;
             padding: 10px;
-            font-size: 20px;
+            font-size: 14px;
         }
         .desc {
-            line-height: 30px;
-            padding: 30px 0;
+            line-height: 24px;
+            padding: 24px 0;
             text-align: left;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
         }
     }

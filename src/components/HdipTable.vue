@@ -10,8 +10,8 @@
                     <th>DDoS攻击防御峰值</th>
                     <th>CC防护能力</th>
                     <th>IP解封时间</th>
-                    <th width="148">WAF防护</th>
-                    <th width="190">售后服务等级</th>
+                    <th width="108">WAF防护</th>
+                    <th width="138">售后服务等级</th>
                     <th>回源带宽</th>
                     <th>操作</th>
                 </tr>
@@ -193,13 +193,13 @@ export default {
         return {
             tabIndex: 0,
             btnStyle: {
-                width: '112px',
-                height: '32px',
-                lineHeight: '32px',
+                width: '100px',
+                height: '30px',
+                lineHeight: '30px',
                 backgroundColor: '#5189ED',
                 color: '#fff',
                 margin: '0 auto',
-                fontSize: '18px',
+                fontSize: '14px',
             }
         }
     }
@@ -208,8 +208,7 @@ export default {
 
 <style lang="scss">
     .hdip-table {
-        width: 100%;
-        max-width: 1340px;
+        width: 1024px;
         box-shadow:0px 3px 6px rgba(0,0,0,0.16);
         background: #fff;
         .tabs {
@@ -221,9 +220,9 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 68px;
+            height: 60px;
             background: #F4F4F4;
-            font-size: 22px;
+            font-size: 18px;
             color: #c2c2c2;
             cursor: pointer;
             &.active {
@@ -233,7 +232,7 @@ export default {
             }
         }
         .content {
-            padding: 64px 28px 0;
+            padding: 50px 22px 0;
         }
         table {
             width: 100%;
@@ -245,18 +244,18 @@ export default {
         }
         th {
             padding: 12px 0;
-            font-size: 22px;
+            font-size: 16px;
         }
         td {
-            line-height: 38px;
+            line-height: 24px;
             padding: 10px;
-            font-size: 20px;
+            font-size: 14px;
         }
         .desc {
-            line-height: 30px;
-            padding: 30px 0;
+            line-height: 24px;
+            padding: 24px 0;
             text-align: left;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
             color: #c2c2c2;
         }

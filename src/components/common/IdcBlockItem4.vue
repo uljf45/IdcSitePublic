@@ -39,26 +39,28 @@ export default {
             display: flex;
             flex-direction: column;
             flex-basis: 33.3%;
-            padding-bottom: 100px;
+            padding-bottom: 60px;
             color: #fff;
         .icon {
             flex-basis: 140px;
             flex-shrink: 0;
             flex-grow: 0;
+            img {
+                transform: scale(0.7);
+            }
         }
         .icon-right {
             padding-right: 20px;
             text-align: left;
         }
         .icon-title {
-            margin-top: 48px;
-            font-size: 30px;
+            font-size: 18px;
             margin-bottom: 18px;
         }
         .icon-content {
-            line-height: 45px;          
+            line-height: 20px;          
             padding: 0 40px;
-            font-size: 20px;
+            font-size: 14px;
         }
     }
 </style>

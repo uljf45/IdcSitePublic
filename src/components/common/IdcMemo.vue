@@ -38,21 +38,24 @@ export default {
 <style lang="scss">
     .idc-memo {
         position: relative;
-        height: 410px;
+        height: 310px;
         background: #fff;
         border-radius: 10px;
         .header {
-            height: 96px;
-            line-height: 96px;
+            height: 62px;
+            line-height: 62px;
             background: #4FABFC;
             color: #fff;
-            font-size: 38px;
+            font-size: 20px;
+            font-weight: bold;
             border-radius: 10px 10px 0 0;
         }
         .content {
             line-height: 38px;
-            padding: 38px;
+            padding: 28px;
             text-align: left;
+            font-size: 14px;
+            line-height: 24px;
         }
         .ask {
             position: absolute;

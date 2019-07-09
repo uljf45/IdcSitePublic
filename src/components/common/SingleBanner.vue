@@ -39,7 +39,7 @@ export default {
 <style lang="scss">
     .single-banner {
         min-width: 1024px;
-        height: 698px;
+        height: 468px;
         background: url('../../../public/imgs/single-banner.png') no-repeat center top;
         color: #e1e1e2;
     }
@@ -52,26 +52,29 @@ export default {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 64%;
-        min-width: 1024px;
+        width: 1024px;
         margin: 0 auto;
-        padding-top: 140px;  
+        padding-top: 60px;  
         .txt {
             flex: 0 1 660px;
         }
         .pic {
             flex: 0 1 280px;
+            text-align: right;
+            img {
+                width: 67%;
+            }
         }
         h1 {
             text-align: left;
             font-weight: normal;
-            font-size: 76px;
+            font-size: 50px;
         }
         p {
-            line-height: 42px;
-            margin-top: 10px;
+            line-height: 24px;
+            margin-top: 36px;
             text-align: left;
-            font-size: 22px;
+            font-size: 14px;
         }
     }
 

@@ -5,7 +5,7 @@
     <idc-block :title="'服务资费'" :innerStyle="{paddingBottom: '68px'}">
       <hdip-table></hdip-table>
     </idc-block>
-    <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px'}">
+    <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px', paddingTop: '30px'}">
       <idc-block-item2 v-for="(item, index) in items1" :key="index" :item="item"></idc-block-item2>
     </idc-block>
     <idc-block :title="'产品优势'">
@@ -101,7 +101,6 @@ export default {
 #index {
   min-width: 1024px;
   text-align: center;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

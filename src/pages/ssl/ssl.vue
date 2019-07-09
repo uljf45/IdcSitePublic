@@ -2,7 +2,7 @@
   <div id="index">
     <idc-header></idc-header>
     <single-banner :title="'SSL证书'" :content="'SSL证书提供了一种在互联网上身份验证的方式，是用来标识和证明双方身份的数字信息文件。使用SSL证书的网站，可以保证用户和服务器间信息交换的保密性具有不可窃听、不可更改、不可否认、不可冒充的功能。并对云上证书进行统一生命周期管理，简化证书部署，一键分发到云上产品。'"></single-banner>
-    <idc-block :title="'证书品牌'" :innerStyle="{width: '92%', padding: '30px 0', justifyContent: 'space-around' }">
+    <idc-block :title="'证书品牌'" :innerStyle="{padding: '40px 0', justifyContent: 'space-between' }">
       <div v-for="(item, index) in items3" :key="index" class="certificate-item">
         <div class="certificate-item-pic">
           <img :src="item.icon" alt="">
@@ -21,8 +21,8 @@
     <idc-block :title="'证书类型'" :bgColor="'dark'" >
       <ssl-table></ssl-table>
     </idc-block>
-    <idc-block :title="'购买流程'" :innerStyle="{width: '92%', padding: '68px 0 148px'}">
-      <div class="question-item" v-for="(item, index) in items1" :class="{mt70: index > 3}" :key="index">
+    <idc-block :title="'购买流程'" :innerStyle="{ padding: '48px 0'}">
+      <div class="question-item" v-for="(item, index) in items1" :class="{mt50: index > 3}" :key="index">
         <img src="../../../public/icons/zhupiaopiao.png" alt="">
         <p class="" v-text="item.title"></p>
       </div>
@@ -153,41 +153,27 @@ export default {
 #index {
   min-width: 1024px;
   text-align: center;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   .question-item {
-    &.mt70 {
-      margin-top: 70px;
+    &.mt50 {
+      margin-top: 50px;
     }
     flex-basis: 25%;
     p {
-      margin-top: 30px;
-      font-size: 28px;
+      margin-top: 20px;
+      font-size: 18px;
       font-weight: bold;
-      @media screen and (max-width: 1400px) {
-        font-size: 26px;
-      }
-
-      @media screen and (max-width: 1260px) {
-        font-size: 22px;
-      }
     }
-  }
-  .more-wrap {
-    width: 100%;
-    margin-top: 94px;
-    text-align: center;
-  }
-  .more {
-    font-size: 26px;
-    color: #4FABFC;
+    img {
+      transform: scale(0.7);
+    }
   }
 
   .certificate-item {
     flex-basis: 23.4%;
-    padding-bottom: 56px;
+    padding-bottom: 6px;
     border: 1px solid #707070;
     background: #fff;
   }
@@ -197,7 +183,7 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 260px;
+    height: 140px;
     img {
       width: 60%;
     }
@@ -206,7 +192,7 @@ export default {
     line-height: 26px;
     padding: 0 16px;
     text-align: left;
-    font-size: 16px;
+    font-size: 12px;
     color: #23395E;
   }
 

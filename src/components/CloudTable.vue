@@ -97,10 +97,10 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 108px;
+            height: 80px;
             background: #f8f8f8;
             border: 1px solid #f1f1f1;
-            font-size: 22px;
+            font-size: 18px;
             color: #424242;
             &.active {
                 border-left: 2px solid #008AFF;
@@ -110,25 +110,25 @@ export default {
             position: relative;
             flex: 1;
             background: #fff;
-            padding: 0 4%;
+            padding: 0 2%;
             .p1 {
-                margin-top: 40px;
+                margin-top: 28px;
                 text-align: left;
-                font-size: 22px;
+                font-size: 18px;
                 color: #424242;
             }
             .p2 {
                 line-height: 30px;
-                margin-top: 30px;
+                margin-top: 20px;
                 text-align: left;
                 color: #424242;
-                font-size: 18px;
+                font-size: 14px;
             }
         }
         .recommend {
             position: absolute;
             bottom: 40px;
-            left: 4%;
+            left: 2%;
             width: 92%;
             display: flex;
             flex-direction: row;
@@ -148,21 +148,19 @@ export default {
             font-size: 22px;
         }
         .circles {
-            flex: 1;
+            flex: 0 0 480px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            @media screen and (min-width: 1400px) {
-                flex: 0 0 766px;
-            }
+            margin-left: 10px;
         }
         .circle {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex: 0 0 106px;
-            height: 106px;
+            flex: 0 0 76px;
+            height: 76px;
             border: 1px solid #707070;
             border-radius: 50%;
         }
@@ -170,13 +168,13 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 46px;
-            font-size: 20px;
+            line-height: 20px;
+            font-size: 16px;
             color: #008aff;
         }
         .circle-p2 {
-            margin-top: 4px;
-            font-size: 14px;
+            font-size: 12px;
+            line-height: 14px;
             color: #989898;
         }
         .btn-pay {

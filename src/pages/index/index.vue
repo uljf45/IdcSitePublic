@@ -111,14 +111,13 @@ export default {
 #index {
   min-width: 1024px;
   text-align: center;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
 .owl-carousel {
   min-width: 1024px;
-  height: 698px;
+  height: 468px;
 }
 .owl-dots {
   position: absolute;
@@ -131,8 +130,8 @@ export default {
 }
 .banner {
   width: 100%;
-  height: 698px;
-  background: url('~@/assets/imgs/banner1.png') no-repeat center top;
+  height: 468px;
+  background: url('~@/assets/imgs/banner1.png') no-repeat center center;
   background-size: cover;
 }
 .banner1 {

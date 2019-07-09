@@ -10,7 +10,7 @@
         <a class="more" href="javascript:void(0)">点击查看更多</a>
       </div>
     </idc-block>
-    <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px'}">
+    <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px', paddingTop: '30px'}">
       <idc-block-item2 v-for="(item, index) in items2" :key="index" :item="item"></idc-block-item2>
     </idc-block>
     <idc-footer></idc-footer>
@@ -86,7 +86,6 @@ export default {
 #index {
   min-width: 1024px;
   text-align: center;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -98,11 +97,11 @@ export default {
   }
   .more-wrap {
     width: 100%;
-    margin-top: 94px;
+    margin-top: 58px;
     text-align: center;
   }
   .more {
-    font-size: 26px;
+    font-size: 18px;
     color: #4FABFC;
   }
 }

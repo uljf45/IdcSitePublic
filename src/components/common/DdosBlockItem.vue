@@ -33,34 +33,35 @@ export default {
 </script>
 <style lang='scss' scoped>
 .ddos-block-item{
-    width: 94%;   
+    width: 90%;   
     background: white;
     border-radius: 5px;
     margin: 0 auto;
     margin-bottom: 70px;
     .block-item-head{
-        height:100px;
+        height:62px;
         background:rgba(79,171,252,1);      
         border-radius:5px 5px 0px 0px;
         color: #fff;
-        line-height:100px;
-        font-size:40px;
+        line-height:62px;
+        font-size:24px;
+        font-weight: bold;
     }
     .block-item-m{
-       height: 220px;
+       height: 160px;
        border-bottom: 1px solid #707070;
         p{
                 height: 54px;
-                font-size: 30px;
+                font-size: 20px;
                 color: #23395E;
-                padding: 24px 0 60px 0;
+                padding: 24px 0 20px 0;
                 line-height: 54px;
         }
         .block-item-tip{
             display: flex;
             justify-content: space-around;
             color: #23395E;
-            font-size: 20px;           
+            font-size: 16px;           
              h3{
                  color: #23395E;
                  font-weight: normal;
@@ -71,15 +72,15 @@ export default {
         display: flex;
         .block-item-tip{
             width: 25%;
-            padding: 45px 0;
+            padding: 34px 0;
             h3{
                 color: #23395E;
                 font-weight: normal;
-                font-size: 23px;
+                font-size: 16px;
             }
             img{
                 width: 22%;
-                margin-bottom: 48px; 
+                margin-bottom: 30px; 
             }
         }
     }

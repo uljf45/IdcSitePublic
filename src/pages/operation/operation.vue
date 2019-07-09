@@ -6,7 +6,7 @@
       <idc-block-item v-for="(item, index) in items2" :key="index" :item="item" :fontColor="'dark'"></idc-block-item>
     </idc-block>
     <idc-block :title="'业务范围'" :bgColor="'dark'" >
-      <div class="question-item" v-for="(item, index) in items1" :class="{mt70: index > 2}" :key="index">
+      <div class="question-item" v-for="(item, index) in items1" :class="{mt50: index > 2}" :key="index">
         <img src="../../../public/icons/zhupiaopiao-white.png" alt="">
         <p class="" v-text="item.title"></p>
       </div>
@@ -110,7 +110,6 @@ export default {
 #index {
   min-width: 1024px;
   text-align: center;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -130,22 +129,18 @@ export default {
     color: #4FABFC;
   }
   .question-item {
-    &.mt70 {
-      margin-top: 70px;
+    &.mt50 {
+      margin-top: 50px;
     }
     flex-basis: 33.33%;
     p {
-      margin-top: 30px;
-      font-size: 28px;
+      margin-top: 20px;
+      font-size: 18px;
       font-weight: bold;
       color: #e1e5e8;
-      @media screen and (max-width: 1400px) {
-        font-size: 26px;
-      }
-
-      @media screen and (max-width: 1260px) {
-        font-size: 22px;
-      }
+    }
+    img {
+      transform: scale(0.7);
     }
   }
 }

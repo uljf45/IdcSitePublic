@@ -44,20 +44,19 @@ export default {
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 90%;
-            min-width: 1024px;
+            width: 1024px;
             margin: 0 auto;
             padding-top: 40px;
             h2 {
-                margin-left: 11px;
+                margin-left: 6px;
                 font-weight: normal;
-                font-size: 38px;
+                font-size: 26px;
                 color: #23395E;
             }
         }
         .brick {
             width: 7px;
-            height: 50px;
+            height: 40px;
             background: #008aff;
         }
     }
@@ -65,10 +64,9 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 90%;
-        min-width: 1024px;
+        width: 1024px;
         margin: 0 auto;
-        padding: 58px 0;
+        padding: 40px 0;
 
     }
     .block-light {

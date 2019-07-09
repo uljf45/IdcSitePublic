@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
     .idc-block-item3 {
             display: flex;           
-            padding-bottom: 100px;
+            padding-bottom: 60px;
             color: #fff;
             width: 100%;
             .idc-block-1{
@@ -31,7 +31,7 @@ export default {
                 text-align: left;
                 padding-left: 28px;
                 p{
-                    margin-bottom: 27px; 
+                    margin-bottom: 22px; 
                 }
                 .tips{
                     font-size: 21px;
@@ -40,15 +40,17 @@ export default {
                 }                        
                 .tipsBlock1{
                   color:  #23395E;
-                  font-size: 32px;
-                  line-height: 54px;
+                  font-size: 18px;
+                  line-height: 38px;
                 }
                 .tipsBlock2{
                   color:  #fff;
+                  font-size: 14px;
+                  line-height: 22px;
                  
                 }
                 .secon-part{
-                    margin-bottom: 90px;
+                    margin-bottom: 54px;
                 }                
             }
         .icon {
@@ -66,8 +68,7 @@ export default {
             text-align: left;
         }
         .icon-title {
-            margin-top: 48px;
-            font-size: 30px;
+            font-size: 20px;
         }
         .icon-content {
             line-height: 48px;
@@ -94,18 +95,19 @@ export default {
                         width:100%;                       
                     }
                     .secon-part{
-                        margin-bottom: 60px;
+                        margin-bottom: 30px;
                     }
                      p{
                         margin-bottom: 12px; 
                     }
                     div{                        
-                         margin-bottom: 60px;                 
+                         margin-bottom: 40px;                 
                     }
                      .tipsBlock1{                       
-                        font-size: 21px;
+                        font-size: 16px;
                         &.onlyContent{
-                         font-size: 30px;
+                         font-size: 16px;
+                         line-height: 22px;
                     }
                         
                     }
