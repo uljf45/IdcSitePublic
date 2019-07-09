@@ -1,6 +1,7 @@
 <template>
     <div class="idc-block-item3" :class="mIconWidth">
         <div class="idc-block-1" >
+           <div v-if="item.topIcon" class="top-icon"><img :src="item.topIcon" /></div>
            <div v-for="(item1, index) in item.obj" :key="index" :class = "index == 0?'secon-part':''">           
                 <p class="icon-title" :style="{color: item.bgColor === 'light' ?'#23395E': '#fff' }" v-text="item1.title" ></p>
                 <p class="tips" :class=" [item.bgColor === 'light' ?'tipsBlock1': 'tipsBlock2',item1.title == ''?'onlyContent':'']" v-html="item1.content"></p>
@@ -53,6 +54,14 @@ export default {
                     margin-bottom: 54px;
                 }                
             }
+        .top-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 800px;
+            }
+        }
         .icon {
             flex-basis: 140px;
             flex-shrink: 0;
@@ -89,7 +98,7 @@ export default {
             padding-bottom: 40px;  
              .idc-block-1{
                     width: 100%;   
-                    padding:0 118px;   
+                    padding:0 50px;   
                              
                     .tips{                       
                         width:100%;                       

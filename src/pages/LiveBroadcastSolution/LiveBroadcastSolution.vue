@@ -111,7 +111,7 @@ export default {
           ]
         },
         {
-          icon: '',
+          topIcon: './imgs/zhibo-large.jpg',
           title:'云架构部署',
           bgColor:'dark',
           obj:[
