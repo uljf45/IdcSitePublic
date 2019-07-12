@@ -1,13 +1,10 @@
 <template>
   <div id="index">
     <idc-header></idc-header>
-    <single-banner :title="'高防服务器'" :content="'针对IDC机房内的互联网客户，提供全栈DDoS攻击防护服务，该服务具有网络路径最优、秒级切入切出、高达1T防护带宽和多种线路选择等优势，客户零操作即可接入服务。同时还提供定制化服务，以满足客户不同场景的业务需求。'"></single-banner>
+    <single-banner :icon="'./imgs/fangyu2.png'" :title="'高防服务器'" :content="'针对IDC机房内的互联网客户，提供全栈DDoS攻击防护服务，该服务具有网络路径最优、秒级切入切出、高达1T防护带宽和多种线路选择等优势，客户零操作即可接入服务。同时还提供定制化服务，以满足客户不同场景的业务需求。'"></single-banner>
     <idc-block :title="'推荐防护配置'" :innerStyle="{paddingBottom: '28px'}">
       <div class="memos">
         <idc-memo style="width: 23%;" v-for="(item, index) in items1" :key="index" :item="item" :showButton="true"></idc-memo>
-      </div>
-      <div class="more-wrap">
-        <a class="more" href="javascript:void(0)">点击查看更多</a>
       </div>
     </idc-block>
     <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px', paddingTop: '30px'}">

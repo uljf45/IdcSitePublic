@@ -16,7 +16,7 @@
                         <li><a href="./privateCloud.html">私有云</a></li>
                         <li><a href="./highDefense.html">高防服务器</a></li>
                         <li><a href="./highDefenseIP.html">高防IP</a></li>
-                        <li><a href="./index.html">CDN高防</a></li>
+                        <li><a href="./CDNHighDefense.html">CDN高防</a></li>
                         <li><a href="./cloud.html">云主机租用</a></li>
                         <li><a href="./specialLine.html">跨境专线</a></li>
                         <li><a href="./ssl.html">SSL证书</a></li>
@@ -38,20 +38,19 @@
                     <span>支持与服务</span>
                     <ul class="subnav">
                         <li class="subnav-border"></li>
-                        <li><a href="./index.html">服务流程</a></li>
-                        <li><a href="./index.html">7X24小时运维</a></li>
+                        <li><a href="./ServiceFlow.html">服务流程</a></li>
+                        <li><a href="./HourMaintenance.html">7X24小时运维</a></li>
                     </ul>
                 </div>
                 <!-- <div class="nav-item">
                     <span>合作与共赢</span>
                 </div> -->
                 <div class="nav-item">
-                    <span>关于我们</span>
-                    <ul class="subnav">
-                        <li class="subnav-border"></li>
-                        <li><a href="./index.html">公司简介</a></li>
-                        <li><a href="./index.html">联系我们</a></li>
-                    </ul>
+                    <span><a href="./ContactUs.html" class="connect_us">联系我们</a></span>
+                    <!-- <ul class="subnav">
+                        <li class="subnav-border"></li>                      
+                        <li></li>
+                    </ul> -->
                 </div>
 
             </nav>
@@ -117,7 +116,7 @@ export default {
             align-items: center;
             flex-basis: 18%;
             height: 68px;
-            span {
+            span,.connect_us {
                 display: flex;
                 justify-content: center;
                 align-items: center;

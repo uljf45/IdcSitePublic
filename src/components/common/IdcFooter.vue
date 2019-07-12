@@ -21,7 +21,7 @@
                             <li><a href="./privateCloud.html">私有云</a><a href="./cloud.html">云主机租用</a></li>
                             <li><a href="./highDefense.html">高防服务器</a><a href="./specialLine.html">跨境专线</a></li>
                             <li><a href="./highDefenseIP.html">高防IP</a><a href="./ssl.html">SSL证书</a></li>
-                            <li><a href="./index.html">CDN高防</a><a href="./operation.html">运维服务</a></li>
+                            <li><a href="./CDNHighDefense.html">CDN高防</a><a href="./operation.html">运维服务</a></li>
                         </ul>
                     </div>
                     <div class="nav-item nav-item--second">
@@ -37,31 +37,27 @@
                     <div class="nav-item">
                         <span>支持与服务</span>
                         <ul class="subnav">
-                            <li><a href="./index.html">服务流程</a></li>
-                            <li><a href="./index.html">7X24小时运维</a></li>
+                            <li><a href="./ServiceFlow.html">服务流程</a></li>
+                            <li><a href="./HourMaintenance.html">7X24小时运维</a></li>
                         </ul>
                     </div>
                     <!-- <div class="nav-item">
                         <span>合作与共赢</span>
                     </div> -->
                     <div class="nav-item">
-                        <span>关于我们</span>
-                        <ul class="subnav">
-                            <li><a href="./index.html">公司简介</a></li>
-                            <li><a href="./index.html">联系我们</a></li>
-                        </ul>
+                        <span><a href="./ContactUs.html" class="connect_us">联系我们</a></span>
                     </div>
 
                 </nav>
             </section>
-            <section class="footer-links">
+            <!-- <section class="footer-links">
                 <span>友情链接：</span>
                 <ul>
                     <li>唯一网络 易名科技 Linux面板 香港高防服务器 爱名网 美橙互联 DDOS防护 云服务器 3D模型 A5交易 爱站网 域名购买 域名城 时代互联 网站测速 疯猫网络 玉米网 中介网 3DM单机游戏 域名抢注 安全宝 聚名网 百度安全指数 安全狗 云指 国内200+城市线路VPN 更多</li>
                 </ul>
-            </section>
+            </section> -->
             <section class="footer-copyright">
-                <p>Copyright©2012-2018 版权归属 香港亚特网络科技有限公司 闽ICP备11028257号</p>
+                <p>Copyright©2012-2020 版权归属 香港亚特网络科技有限公司</p>
             </section>
         </div>
     </footer>
@@ -149,6 +145,11 @@ export default {
         span {
             font-size: 16px;
             color: #EAEAEA;
+            a {
+                &.connect_us {
+                    color: #EAEAEA;
+                }
+            }
         }
         .subnav {
             margin-top: 10px;
@@ -189,6 +190,7 @@ export default {
         }
     }
     .footer-copyright {
+        border-top: 1px solid #707070;
         height: 50px;
         line-height: 50px;
         font-size: 14px;

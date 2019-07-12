@@ -7,7 +7,7 @@
                 <idc-button :text="'立即咨询'"></idc-button>
             </section>
             <section class="pic">
-                <img src="../../../public/imgs/fangyu-large.png" alt="">
+                <img :src="icon" alt="">
             </section> 
         </div>
     </div>
@@ -29,6 +29,10 @@ export default {
         bgImgType: {
             type: Number,
             default: 1, // 1. '../../../public/imgs/single-banner.png'   2. '../../../public/imgs/single-banner2.png'
+        },
+        icon: {
+            type: String,
+            default: './imgs/fangyu-large.png'
         }
     },
     components: {

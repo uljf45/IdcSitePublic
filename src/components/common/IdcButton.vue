@@ -1,5 +1,5 @@
 <template>
-    <div class="idc-button" v-text="text"></div>
+    <a class="idc-button" v-text="text" href="./ContactUs.html"></a>
 </template>
 
 <script>
@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss">
     .idc-button {
+        display: block;
         width: 120px;
         height: 40px;
         line-height: 40px;
@@ -25,6 +26,7 @@ export default {
         text-align: center;
         font-size: 18px;
         color: #e1e1e2;
+        cursor: pointer;
     }
 </style>
 

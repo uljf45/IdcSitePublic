@@ -6,9 +6,6 @@
       <div class="memos">
         <idc-memo style="width: 23%;" v-for="(item, index) in items1" :key="index" :item="item" :showButton="true"></idc-memo>
       </div>
-      <div class="more-wrap">
-        <a class="more" href="javascript:void(0)">点击查看更多</a>
-      </div>
     </idc-block>
     <idc-block :title="'产品优势'" :bgColor="'dark'" :innerStyle="{paddingBottom: '10px', paddingTop: '30px'}">
       <idc-block-item2 v-for="(item, index) in items2" :key="index" :item="item"></idc-block-item2>

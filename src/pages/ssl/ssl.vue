@@ -1,7 +1,7 @@
 <template>
   <div id="index">
     <idc-header></idc-header>
-    <single-banner :title="'SSL证书'" :content="'SSL证书提供了一种在互联网上身份验证的方式，是用来标识和证明双方身份的数字信息文件。使用SSL证书的网站，可以保证用户和服务器间信息交换的保密性具有不可窃听、不可更改、不可否认、不可冒充的功能。并对云上证书进行统一生命周期管理，简化证书部署，一键分发到云上产品。'"></single-banner>
+    <single-banner :title="'SSL证书'" :icon="'./icons/ssl1.png'" :content="'SSL证书提供了一种在互联网上身份验证的方式，是用来标识和证明双方身份的数字信息文件。使用SSL证书的网站，可以保证用户和服务器间信息交换的保密性具有不可窃听、不可更改、不可否认、不可冒充的功能。并对云上证书进行统一生命周期管理，简化证书部署，一键分发到云上产品。'"></single-banner>
     <idc-block :title="'证书品牌'" :innerStyle="{padding: '40px 0', justifyContent: 'space-between' }">
       <div v-for="(item, index) in items3" :key="index" class="certificate-item">
         <div class="certificate-item-pic">
@@ -23,7 +23,7 @@
     </idc-block>
     <idc-block :title="'购买流程'" :innerStyle="{ padding: '48px 0'}">
       <div class="question-item" v-for="(item, index) in items1" :class="{mt50: index > 3}" :key="index">
-        <img src="../../../public/icons/zhupiaopiao.png" alt="">
+        <img src="../../../public/icons/huojian.png" alt="">
         <p class="" v-text="item.title"></p>
       </div>
     </idc-block>
@@ -76,22 +76,22 @@ export default {
       ],
       items2: [
         {
-          icon: './icons/sever_icon_1.png',
+          icon: './icons/icon-ca.png',
           title: '顶级CA机构',
           content: 'SSL证书由国际顶级CA机构授权颁发，安全有保障',
         },
         {
-          icon: './icons/sever_icon_2.png',
+          icon: './icons/icon-jiami.png',
           title: '数据加密传输',
           content: '加密保护浏览器/APP与服务器之间的数据传输安全',
         },
         {
-          icon: './icons/sever_icon_3.png',
+          icon: './icons/icon-100.png',
           title: '100%兼容性',
           content: 'Symantec根证书签发，支持所有浏览器和移动设备',
         },
         {
-          icon: './icons/sever_icon_4.png',
+          icon: './icons/icon-search.png',
           title: '提升搜索排名',
           content: '采用 HTTPS 有利于提升网站的搜索排名及站点可信度',
         },
@@ -225,5 +225,9 @@ export default {
 }
 .banner1 {
   background-image: url('~@/assets/imgs/banner1.png');
+}
+#index .single-banner-inner .pic {
+  display: flex;
+  align-items: center;
 }
 </style>

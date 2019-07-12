@@ -1,7 +1,7 @@
 <template>
   <div id="index">   
     <idc-header></idc-header>
-    <single-banner :bgImgType="2" :title="'直播解决方案'" :content="'在线视频直播是目前互联网较为常见的网络应用，包括在线娱乐平台、在线电子竞技直播、在线直播课堂、视频会议、在线电视直播、体育赛事直播等应用。而如今，随着游戏行业的火爆，电子竞技直播业务需求随之而来，特别是海外直播用户群体庞大，这就要求了设备在计算能力，网络方面必须具备一些特殊的要求。'"></single-banner>
+    <single-banner :icon="'./icons/zz10.png'"  :bgImgType="2" :title="'直播解决方案'" :content="'在线视频直播是目前互联网较为常见的网络应用，包括在线娱乐平台、在线电子竞技直播、在线直播课堂、视频会议、在线电视直播、体育赛事直播等应用。而如今，随着游戏行业的火爆，电子竞技直播业务需求随之而来，特别是海外直播用户群体庞大，这就要求了设备在计算能力，网络方面必须具备一些特殊的要求。'"></single-banner>
     
     <template v-for="(item, index) in items2">
       <idc-block :title="item.title" :bgColor="item.bgColor" :innerStyle="{paddingBottom: '10px'}" :key="index">      

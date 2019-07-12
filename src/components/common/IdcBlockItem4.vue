@@ -45,8 +45,13 @@ export default {
             flex-basis: 140px;
             flex-shrink: 0;
             flex-grow: 0;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
                 transform: scale(0.7);
+                max-height: 100px;
             }
         }
         .icon-right {
@@ -55,6 +60,7 @@ export default {
         }
         .icon-title {
             font-size: 18px;
+            margin-top: 12px;
             margin-bottom: 18px;
         }
         .icon-content {

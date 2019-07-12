@@ -1,13 +1,15 @@
 <template>
   <div id="index">
     <idc-header></idc-header>
-    <single-banner :title="'运维服务'" :content="'我们的支持与服务可根据你当前或计划的使用案例，为您提供一套独特的工具和专业知识，一帮助你创造奇迹'"></single-banner>
+    <single-banner :title="'运维服务'" :icon="'./icons/ywb1.png'" :content="'我们的支持与服务可根据你当前或计划的使用案例，为您提供一套独特的工具和专业知识，一帮助你创造奇迹'"></single-banner>
     <idc-block :title="'服务特权'">
       <idc-block-item v-for="(item, index) in items2" :key="index" :item="item" :fontColor="'dark'"></idc-block-item>
     </idc-block>
     <idc-block :title="'业务范围'" :bgColor="'dark'" >
       <div class="question-item" v-for="(item, index) in items1" :class="{mt50: index > 2}" :key="index">
-        <img src="../../../public/icons/zhupiaopiao-white.png" alt="">
+        <div class="icon-wrap">
+          <img :src="item.icon" alt="">
+        </div>
         <p class="" v-text="item.title"></p>
       </div>
     </idc-block>
@@ -35,68 +37,68 @@ export default {
     return {
       items1: [ 
         {
-          icon: './icons/zhupiaopiao-white.png', 
+          icon: './icons/byw1.png', 
           title: '服务器系统维护',
         },
         {
-          icon: './icons/zhupiaopiao-white.png',
+          icon: './icons/byw2.png',
           title: '服务器故障处理',
         },
         {
-          icon: './icons/zhupiaopiao-white.png',
+          icon: './icons/byw3.png',
           title: '数据库调优',
         },
         {
-          icon: './icons/zhupiaopiao-white.png',
+          icon: './icons/byw4.png',
           title: '服务器代维护',
         },
         {
-          icon: './icons/zhupiaopiao-white.png',
+          icon: './icons/byw5.png',
           title: '安全扫面评估',
         },
         {
-          icon: './icons/zhupiaopiao-white.png',
+          icon: './icons/byw6.png',
           title: '网络与系统安全策略',
         },
       ],
       items2: [
         {
-          icon: './icons/youxi.png',
+          icon: './icons/yw1.png',
           title: '最快10分钟响应',
           content: '生产系统停机 < 10分钟    &nbsp;&nbsp;业务不可用 < 30分钟    &nbsp;&nbsp;业务受损 < 3小时    &nbsp;&nbsp;系统异常 < 8小时    &nbsp;&nbsp;一般性指导 < 16小时。'
         },
         {
-          icon: './icons/zhibo.png',
+          icon: './icons/yw2.png',
           title: '资深技术专家支持',
           content: '案例处理人员：资深技术专家。'
         },
         {
-          icon: './icons/ddos.png',
+          icon: './icons/yw3.png',
           title: '企业电话专线',
           content: '服务时间：7*24小时<br> 支持专属400电话专线快速接入，享受更专业贴心的售后工程师电话服务，同时享有接入优先级最高特权'
         },
         {
-          icon: './icons/jiankong.png',
+          icon: './icons/yw4.png',
           title: 'IM企业群支持',
           content: '服务时间：7*24小时<br> 我们为客户提供7*24小时的专属企业IM群，实时快速响应客户的故障处理，业务咨询等问题'
         },
         {
-          icon: './icons/ddos.png',
+          icon: './icons/yw5.png',
           title: '专属技术服务经理',
           content: '资深技术专家担任，作为我们售后技术服务统一接口，熟悉客户架构，提前预知技术风险并提供优化建议，指导或配合客户制定最佳解决方案，提供更全面，更贴身，更主动的技术服务。'
         },
         {
-          icon: './icons/jiankong.png',
+          icon: './icons/yw6.png',
           title: '第三方软件支持',
           content: '帮助客户了解产品特性，指导客户更好的使用产品，结合客户需求提供适应其特点的产品架构方案咨询，提供最佳实践案例，通过架构设计优化满足弹性，高可用，高性能等客户需求。'
         },
         {
-          icon: './icons/ddos.png',
+          icon: './icons/yw7.png',
           title: '重大活动保障',
           content: '在企业重大营销或技术活动期间，提供专家7*24小时全程保驾护航，提前规避风险，快速响应问题，保障企业客户活动平稳进行。'
         },
         {
-          icon: './icons/jiankong.png',
+          icon: './icons/yw8.png',
           title: '产品架构咨询',
           content: '帮助客户了解产品特性，指导客户更好的使用产品，结合客户需求提供适应其特点的产品架构方案咨询，提供最佳实践案例，通过架构设计优化满足弹性，高可用，高性能等客户需求。。'
         },
@@ -129,6 +131,10 @@ export default {
     color: #4FABFC;
   }
   .question-item {
+    .icon-wrap {
+      height: 80px;
+      overflow: hidden;
+    }
     &.mt50 {
       margin-top: 50px;
     }
@@ -165,5 +171,9 @@ export default {
 }
 .banner1 {
   background-image: url('~@/assets/imgs/banner1.png');
+}
+#index .single-banner-inner .pic {
+  display: flex;
+  align-items: center;
 }
 </style>

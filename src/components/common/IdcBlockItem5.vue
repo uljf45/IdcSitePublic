@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    name: 'IdcBlockItem3',
+    name: 'IdcBlockItem5',
     props: ['item','mIconWidth']   
 }
 </script>

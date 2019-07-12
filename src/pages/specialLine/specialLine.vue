@@ -1,10 +1,10 @@
 <template>
   <div id="index">
     <idc-header></idc-header>
-    <single-banner :title="'跨境专线'" :content="'连接多个国家地区，<br>专线直通网络，延迟低，安全可靠。'"></single-banner>
+    <single-banner :title="'跨境专线'" :icon="'./imgs/fangyu4.png'" :content="'连接多个国家地区，<br>专线直通网络，延迟低，安全可靠。'"></single-banner>
     <idc-block :title="'网络常见问题'" :innerStyle="{ padding: '48px 0'}">
       <div class="question-item" v-for="(item, index) in items1" :class="{mt50: index > 3}" :key="index">
-        <img src="../../../public/icons/zhupiaopiao.png" al5="">
+        <img src="../../../public/icons/wen.png" al5="">
         <p class="" v-text="item.title"></p>
       </div>
     </idc-block>
@@ -77,51 +77,51 @@ export default {
     return {
       items1: [
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '网络延迟过高',
         },
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '跨国传输慢',
         },
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '网络出口拥堵',
         },
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '公网成本高昂',
         },
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '数据通讯不安全',
         },
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '硬件配置低',
         },
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '丢包率高',
         },
         {
-          icon: './icons/zhupiaopiao.png',
+          icon: './icons/wen.png',
           title: '同一时间访问多，不稳定',
         },
       ],
       items2: [
         {
-          icon: './icons/sever_icon_1.png',
+          icon: './icons/sl1.png',
           title: '实时恢复',
           content: '高度治愈的网络性能，确保故障的情况下业务的实施恢复',
         },
         {
-          icon: './icons/sever_icon_2.png',
+          icon: './icons/sl2.png',
           title: '独享带宽',
           content: '客户网络的相互隔离，且保证全天没有“拥堵”延迟丢包等问题',
         },
         {
-          icon: './icons/sever_icon_3.png',
+          icon: './icons/sl3.png',
           title: '专线连接',
           content: '保证网络稳定，高速，数据实时同步，提升用户体验',
         },
@@ -242,5 +242,9 @@ export default {
 }
 .banner1 {
   background-image: url('~@/assets/imgs/banner1.png');
+}
+#index .single-banner-inner .pic {
+  display: flex;
+  align-items: center;
 }
 </style>

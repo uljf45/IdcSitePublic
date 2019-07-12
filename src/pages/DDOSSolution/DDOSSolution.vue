@@ -1,7 +1,7 @@
 <template>
   <div id="index">     
     <idc-header></idc-header>
-    <single-banner :bgImgType="2" :title="'DDOS解决方案'" :content="'DDOS 高防解决方案针对DDOS攻击,香港公司提供香港高防服务器租用。客户可以把网站域名解析到服务高防IP，有攻击时，高防线路会对攻击的流量进行清洗过滤，把真正的有效流量导到服务器。让攻击不影响服务器正常使用。'"></single-banner>
+    <single-banner :icon="'./icons/d.png'" :bgImgType="2" :title="'DDOS解决方案'" :content="'DDOS 高防解决方案针对DDOS攻击,香港公司提供香港高防服务器租用。客户可以把网站域名解析到服务高防IP，有攻击时，高防线路会对攻击的流量进行清洗过滤，把真正的有效流量导到服务器。让攻击不影响服务器正常使用。'"></single-banner>
     <idc-block :title="'产品优势'" :innerStyle="{paddingBottom: '28px'}">
       <div class="memos">
         <idc-memo style="width: 23%;heigth:500px" v-for="(item, index) in items1" :key="index" :item="item" :showButton="false"></idc-memo>
@@ -79,19 +79,19 @@ export default {
          {          
           title:'香港本地高防服务器常用配置',
           bgColor:'light',
-          subTitle:'高达500G 硬防',
+          subTitle:'高达1000G硬防',
           subTitle1:'DDOS防护',
           des:['全球三大清洗中心打造T级防护','香港本土流洗高达100G，延迟低至15MS'],
           obj:[
             {
-              icon: './icons/sever_icon_1.png',            
+              icon: './icons/d1.png',            
               content: '智能清洗，稳定高效'
             },
             {
-              icon: './icons/sever_icon_1.png',             
+              icon: './icons/d2.png',             
               content: '支持弹性扩容，防御可先低后高'
             },{
-              icon: './icons/sever_icon_1.png',             
+              icon: './icons/d3.png',             
               content: '支持秒解，快速扩容'
             },
             {
@@ -123,7 +123,7 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang='scss' >
 #index {
   min-width: 1024px;
   text-align: center;
@@ -167,5 +167,9 @@ export default {
 }
 .banner1 {
   background-image: url('~@/assets/imgs/banner1.png');
+}
+ #index .single-banner-inner .pic {
+  display: flex;
+  align-items: center;
 }
 </style>

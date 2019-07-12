@@ -1,7 +1,7 @@
 <template>
   <div id="index">   
     <idc-header></idc-header>
-    <single-banner :bgImgType="2" :title="'金融安全解决方案'" :content="'专业提供基金、证券、保险、银行等金融业务的互联网金融安全解决方案，防DDOS攻击，多种CC攻击，抵御APP仿冒等。'"></single-banner>
+    <single-banner :icon="'./icons/j.png'" :bgImgType="2" :title="'金融安全解决方案'" :content="'专业提供基金、证券、保险、银行等金融业务的互联网金融安全解决方案，防DDOS攻击，多种CC攻击，抵御APP仿冒等。'"></single-banner>
     <idc-block :title="'产品优势'" :innerStyle="{paddingBottom: '28px'}">
       <div class="memos">
         <idc-memo style="width: 23%;heigth:500px" v-for="(item, index) in items1" :key="index" :item="item" :showButton="false"></idc-memo>
@@ -79,17 +79,17 @@ export default {
       ],
       items3: [       
                 {
-                  icon: './icons/sever_icon_1.png',
+                  icon: './icons/j1.png',
                   title: '多年网络防御经验',
                   content: '我们的运维团队，是拥有8年以上CC，DDOS防御经验的工程师组成，技术成熟，应急能力强，打造最安全可靠的，攻击防御系统。'
                 },
                 {
-                  icon: './icons/sever_icon_2.png',
+                  icon: './icons/j2.png',
                   title: '最先进设备，最牢固的框架',
                   content:'我们采用最选进的安全防火墙结合全球三大清洗中心，经两年努力不断改进，拥有最高效的金融行业解决方案系统。'
                 },
                 {
-                  icon: './icons/sever_icon_3.png',
+                  icon: './icons/j3.png',
                   title: '多年实践验证，更有说服力',
                   content: '为国内50家以上金融行业公司提供解决方案，实践验证方案可行性及有效性。'
                 }  

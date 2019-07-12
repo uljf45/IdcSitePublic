@@ -1,7 +1,7 @@
 <template>
   <div id="index">   
     <idc-header></idc-header>
-    <single-banner :bgImgType="2" :title="'监控解决方案'" :content="'基于云平台对主机进行性能监测与资源控制。降低IT成本，提高运维效率。是一种可弹性的云计算服务。<br>支持流量监控，负载监控，端口监控，IO监控，PING值监测等。'"></single-banner>
+    <single-banner :icon="'./icons/jk.png'" :bgImgType="2" :title="'监控解决方案'" :content="'基于云平台对主机进行性能监测与资源控制。降低IT成本，提高运维效率。是一种可弹性的云计算服务。<br>支持流量监控，负载监控，端口监控，IO监控，PING值监测等。'"></single-banner>
     <idc-block :title="'产品优势'" :innerStyle="{paddingBottom: '28px'}">
       <div class="memos">
         <idc-memo style="width: 23%;heigth:500px" v-for="(item, index) in items1" :key="index" :item="item" :showButton="false"></idc-memo>
@@ -79,32 +79,32 @@ export default {
       ],
       items3: [       
                 {
-                  icon: './icons/sever_icon_1.png',
+                  icon: './icons/jk1.png',
                   title: '云服务临控',
                   content: '可查近半年各服务资源的历史监控数据，高效运维。'
                 },
                 {
-                  icon: './icons/sever_icon_1.png',
+                  icon: './icons/jk2.png',
                   title: '快速告警',
                   content:'灵活设置自定议触发规定，支持多种告警形式，精准告警。'
                 },
                 {
-                  icon: './icons/sever_icon_1.png',
+                  icon: './icons/jk3.png',
                   title: '站点监控',
                   content: '网站进行网络监测，多节点对网站进行可访问性监控。'
                 },
                 {
-                  icon: './icons/sever_icon_1.png',
+                  icon: './icons/jk4.png',
                   title: '应用分组管理',
                   content: '不同地域，不同产品集合，根据不同应用分组统一管理，提高运级效率。'
                 },
                 {
-                  icon: './icons/sever_icon_1.png',
+                  icon: './icons/jk5.png',
                   title: '秒级监控',
                   content:'多种指标，秒级采集，感知最细腻的指标变化，快速做出反映。'
                 },
                 {
-                  icon: './icons/sever_icon_1.png',
+                  icon: './icons/jk6.png',
                   title: '图表统计',
                   content: '根据监控结果，可生成数据统计图表，但提供保存到本地功能。'
                 }    

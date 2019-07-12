@@ -4,8 +4,8 @@
             <div class="icon">
                 <img :src="item.icon" alt="">
             </div>
-            <p class="icon-title" :style="{color: fontColor === 'light' ? '#fff' : '#23395E'}" v-text="item.title"></p>
-            <p class="icon-content" :style="[{color: fontColor === 'light' ? '#fff' : '#23395E'}, contentStyle]" v-text="item.content"></p>
+            <h3 class="icon-title" :style="{color: fontColor === 'light' ? '#fff' : '#23395E'}" v-text="item.title"></h3>
+            <p class="icon-content" :style="[{color: fontColor === 'light' ? '#fff' : '#23395E'}, contentStyle]" v-html="item.content"></p>
         </div>
     </div>
 </template> 
@@ -66,7 +66,7 @@ export default {
             line-height: 20px;
             margin-top: 10px;
             padding: 0 40px;
-            font-size: 14px;
+            font-size: 14px;          
         }
     }
 </style>

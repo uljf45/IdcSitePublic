@@ -1,7 +1,7 @@
 <template>
   <div id="index">    
     <idc-header></idc-header>
-    <single-banner :bgImgType="2" :title="'游戏解决方案'" :content="'结合我们网络运维多年企业安全实战经验，深度分析游戏行业典型安全问题，为游戏行业客户打造专业，可靠的游戏安全解决方案。'"></single-banner>
+    <single-banner :icon="'./icons/g.png'" :bgImgType="2" :title="'游戏解决方案'" :content="'结合我们网络运维多年企业安全实战经验，深度分析游戏行业典型安全问题，为游戏行业客户打造专业，可靠的游戏安全解决方案。'"></single-banner>
     <idc-block :title="'游戏业务痛点'" :innerStyle="{paddingBottom: '28px'}">
       <div class="memos">
         <idc-memo style="width: 23%;heigth:500px" v-for="(item, index) in items1" :key="index" :item="item" :showButton="false"></idc-memo>
@@ -90,17 +90,17 @@ export default {
       ],
       items3: [
         {
-          icon: './icons/sever_icon_1.png',
+          icon: './icons/g1.png',
           title: '顶级防护设备',
           content: '针对游戏行业布署专业的防火墙设备，打造专业的防护策略，有效防护CC，DDOS攻击。'
         },
         {
-          icon: './icons/sever_icon_2.png',
+          icon: './icons/g2.png',
           title: '弹性升级云',
           content:'可弹性扩展 ，灵活选择硬件需求，按需付费，降低游戏开发成本。'
         },
         {
-          icon: './icons/sever_icon_3.png',
+          icon: './icons/g3.png',
           title: '数据安全策略',
           content: '安全云打造数据安全灾备及存储，高效读写，灵活监控，安全放心。'
         }        
